@@ -1,0 +1,548 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+li{
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+body{
+  font-family: "Poppins";
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 1338px;
+  margin: 0 auto;
+  padding: 0px 1px 0px 1px;
+}
+
+.header {
+  padding-top: 57px;
+}
+
+#header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#header__menu ul{
+  margin-right: 205px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header__button a{
+  padding: 17px 57px;
+  border: 2px solid #263238;
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 5px;
+  color: #000000;
+
+}
+
+
+#bourger{
+  display: none;
+}
+
+.logo {
+  margin-right: 253px;
+  padding-left: 10px;
+}
+
+.logo {
+  margin-right: 253px;
+  padding-left: 1px;
+  font-weight: 400;
+  font-size: 36px;
+
+}
+
+.logo a{
+  color: #000000;
+}
+
+.logo span{
+  color: #939393;
+}
+
+#menu__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 33px;
+  font-weight: 400;
+  font-size: 20px;
+ 
+}
+
+.mAU{
+  margin-right: 15px;
+}
+
+#menu__list a{
+ color:  #263238;
+ border-bottom: 0px solid #263238;
+ padding-right: 0px;
+ margin-bottom: 10px;
+}
+
+#menu__list a:hover{
+   border-bottom: 2px solid #263238;
+   
+   transition: 0.7s;
+}
+
+#menu__list-visible{
+  display: flex;
+  align-items: center;
+}
+
+
+/*main*/
+
+.main__content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+
+}
+
+.main__text{
+  margin-top: 75px;
+  margin-right: 57px;
+}
+
+.tagline{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.tagline__text h1{
+  font-weight: 600;
+  font-size: 63px;
+  line-height: 80px;
+  width: 386px;
+  margin-bottom: 15px;
+}
+
+.tagline img{
+  transform: rotate(38deg);
+  margin-left: 15px;
+}
+
+.main__text p{
+  color: #8f95A5;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  width: 555px;
+  margin-bottom: 93px;
+}
+
+.main__text a{
+  padding: 32px 117px;
+  background-color: #263238;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36px;
+  border-radius: 15px;
+}
+ 
+/*Skills*/
+
+
+.Skills__cards{
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 435px 435px 435px;
+}
+
+.Skills__text{
+  margin: 147px 0 92px 0;
+  text-align: center;
+}
+
+.head__text h2{ 
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+
+.card__text-main h2{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  margin: 4px 0 27px 0;
+}
+
+.card__text-main p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+  margin-bottom: 53px;
+}
+
+.card__text-main a{
+  padding: 17px 63px;
+  background-color: #263238;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 5px;
+}
+
+.card__writing{
+  width: 434px;
+  height: 531px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.card__Speaking{
+  width: 435px;
+  height:  894px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__Listening{
+  width: 885px;
+  height: 343px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+
+    position: absolute;
+    margin-top: 549px;
+    margin-left: 453px;
+}
+
+.card__Listening{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+
+.card__text-main{
+  padding: 0px 32px 0px 32px;
+}
+
+.card__writing img{
+  margin-left: 141px;
+  margin-top: -25px;
+}
+
+.card__text-Writing__reading{
+  padding: 0 32px 0 32px;
+}
+
+
+.imgm img{
+  margin-left: 0px;;
+  height: 293px;
+}
+
+
+
+/*About Us*/
+
+
+.aboutUs{
+  padding-top: 150px;
+}
+
+.aboutUS__block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.aboutUS__text{
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUs__text-p p{
+  width: 635px;
+}
+
+.text__p-size20 p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 46px;
+  color: #8F95A5;
+}
+
+.aboutUs__text-numbers{
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+
+.number{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number p:not(:last-child){
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+  margin-bottom: 0;
+}
+
+.aboutUs__img img{
+  position: relative;
+}
+
+.aboutUs__img-add{
+  display: none;
+}
+
+.aboutU__text h2{
+  margin-bottom: 23px;
+}
+
+.click{
+  border: 3px solid #263238;
+}
+
+.click:active{
+  border: 0px solid #263238;
+}
+
+
+/*Pricing*/
+
+.pricing__block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.pricing__cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.pricing__card img{
+  position: absolute;
+}
+
+.pricing__card-text{
+  margin-top: 330px;
+}
+
+.pricing__card-text h2{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+}
+
+.pricing__card-text p:not(:last-child){
+  width: 450px;
+}
+
+.pricing__card-text p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+  min-height: 90px;
+  margin: 19px 0 29px 0;
+}
+
+
+.card__price{
+  width: 240px;
+  height: 45px;
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  padding-left: 18px;
+}
+
+.card__price p{
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+
+}
+.card__price span{
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+  margin-left: 8px;
+}
+
+/*Pricing*/
+
+/*Contact Us*/
+
+.contactUs{
+  padding-top: 200px;
+  padding-bottom: 133px;
+}
+
+.contactUs__content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+}
+
+.contactUs__text p{
+  width: 755px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95A5;
+  margin-bottom: 50px;
+}
+
+.aboutUs__form{
+  display: flex;
+  flex-direction: row;
+  gap: 12px ;
+}
+
+.aboutUs__form input{
+  width: 450px;
+  height: 80px;
+  padding: 26px 0 30px 33px;
+  border-radius: 10px;
+  border: 1px solid #8f95A5;
+
+}
+
+.aboutUs__form button{
+  width: 264px;
+  height: 80px;
+  text-align: center;
+  background-color: #263238;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.width__none h2{
+  display:  none;
+}
+
+/*Footer*/
+
+.footer__text{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  gap: 370px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__text p{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8f95A5;
+}
+
+/*Footer*/
+
